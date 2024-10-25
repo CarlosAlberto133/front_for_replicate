@@ -1,7 +1,7 @@
 <template>
     <div class="max-w-4xl mx-auto p-6">
       <div class="bg-white rounded-lg shadow-lg p-6">
-        <h1 class="text-2xl font-bold mb-6">Gerar Imagem com Modelo Treinado</h1>
+        <h1 class="text-black text-2xl font-bold mb-6">Gerar Imagem com Modelo Treinado</h1>
   
         <!-- Informações do Modelo -->
         <div class="bg-blue-50 p-4 rounded-lg mb-6">
@@ -9,8 +9,8 @@
           <div class="space-y-2">
             <div>
               <p class="mb-2">
-                <span class="font-medium">Trigger Word:</span>
-                <code class="ml-2 px-2 py-1 bg-blue-100 rounded">{{ triggerWord }}</code>
+                <span class="text-black font-medium">Trigger Word:</span>
+                <code class="text-black ml-2 px-2 py-1 bg-blue-100 rounded">{{ triggerWord }}</code>
               </p>
               <p class="text-sm text-gray-600">
                 Use esta palavra no seu prompt para ativar o estilo treinado
@@ -19,14 +19,14 @@
             
             <div>
               <p class="text-sm font-medium text-gray-700">Modelo Base:</p>
-              <code class="block p-2 bg-white rounded border text-xs mt-1">
+              <code class="text-black block p-2 bg-white rounded border text-xs mt-1">
                 fofr/flux-tesla-robovan
               </code>
             </div>
   
             <div>
               <p class="text-sm font-medium text-gray-700">Seu Modelo Treinado (.safetensors):</p>
-              <code class="block p-2 bg-white rounded border text-xs mt-1 break-all">
+              <code class="text-black block p-2 bg-white rounded border text-xs mt-1 break-all">
                 {{ modelUrl }}
               </code>
             </div>
@@ -107,7 +107,7 @@
   
         <!-- Generated Image -->
         <div v-if="generatedImage" class="mt-6">
-          <h3 class="font-semibold mb-3">Imagem Gerada:</h3>
+          <h3 class="text-black font-semibold mb-3">Imagem Gerada:</h3>
           <img 
             :src="generatedImage" 
             alt="Imagem gerada"

@@ -1,6 +1,6 @@
 <template>
   <div v-if="trainingStatus" class="mt-6 p-6 bg-white rounded-lg shadow-lg">
-    <h3 class="text-xl font-semibold mb-4">Status do Treinamento</h3>
+    <h3 class="text-black text-xl font-semibold mb-4">Status do Treinamento</h3>
     
     <!-- Status -->
     <div class="mb-4">
@@ -17,7 +17,7 @@
 
     <!-- Progress -->
     <div v-if="trainingStatus.logs" class="mb-4">
-      <pre class="whitespace-pre-wrap bg-gray-50 p-4 rounded text-sm overflow-auto max-h-96">{{ trainingStatus.logs }}</pre>
+      <pre class="text-black whitespace-pre-wrap bg-gray-50 p-4 rounded text-sm overflow-auto max-h-96">{{ trainingStatus.logs }}</pre>
     </div>
 
     <!-- Modelo Treinado - Nova seção -->
@@ -28,7 +28,7 @@
       <div class="space-y-4">
         <div>
           <p class="text-sm text-gray-600 mb-2">URL do modelo (.safetensors):</p>
-          <code class="block p-2 bg-white rounded border text-sm break-all">
+          <code class="text-black block p-2 bg-white rounded border text-sm break-all">
             {{ trainingStatus.modelUrl }}
           </code>
         </div>
